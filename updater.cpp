@@ -26,7 +26,7 @@ int main()
 
     cout << "\e[0;31mUpgrading python3 packages\e[0;39m" << endl;
     sleep(3);
-    system("pip3 install --upgrade pip3"0;
+    system("pip3 install --upgrade pip3");
     system("pip3 freeze --local | grep -v '^\\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U");
     cout << "\e[0;31mUpgrading python pacakges\e[0;39m" << endl;
     sleep(3);
