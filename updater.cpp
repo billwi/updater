@@ -20,6 +20,9 @@ int main()
     cout << "\e[0;31mUpdating kernel\e[0;39m" << endl;
     sleep(3);
     system("apt-get --yes dist-upgrade");
+    cout << "\e[0;31mCleaning old packages\e[0;39m" << endl;
+    sleep(3);
+    system("apt-get --yes autoremove --purge");
 
     cout << "\e[0;31mUpgrading python3 packages\e[0;39m" << endl;
     sleep(3);
